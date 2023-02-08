@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Ropa+Sans&display=swap');
+
+:root {
+  --titleFont: 'Fjalla One', sans-serif;
+  --text: 'Ropa Sans', sans-serif;
+  --darkColor: #965778;
+  --darkText: #1b1a1b;
+  --lightText: #fcfcfc;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient( 135deg, #623AA2 10%, #F97794 100%);
+  width: 100vw;
+  height: 100vh;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+#title {
+  font-family: var(--titleFont);
+  font-size: calc(2rem + 2vw);
+  color: var(--lightText);
+}
+
+#about {
+  font-family: var(--text);
+  color: var(--lightText);
+  font-size: calc(1rem + 1vw);
+}
+
+#welcomeCont {
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 85%;
+  margin: 5%;
+  padding: 5%;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 2px 2px 12px #aa8fc927;
+  backdrop-filter: blur( 19px );
+  -webkit-backdrop-filter: blur( 19px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+#buttonsCont {
+  margin: 5%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  gap: 3%;
+}
+
+.selectProject {
+  width: 30%;
+  height: calc(4rem + 3vw);
+  border-radius: 15px;
+  background: rgba( 255, 255, 255, 0.25 );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  color: var(--lightText);
+  font-family: var(--text);
+  font-size: calc(0.8rem + 1vw);
+  transition: 0.5s;
+}
+.selectProject:hover {
+  transform: scale(105%);
+  background: #623aa21a;
+  border: 1px solid rgba(255, 255, 255, 0.703);
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background-image: linear-gradient( 135deg, #623AA2 10%, #F97794 100%);
+  box-shadow: 2px 5px 10px 1px #3f276531;
+}
+
+#c1 {
+  left: -20%;
+  top: 5%;
+  width: 15rem;
+  height: 15rem;
+}
+#c2 {
+  width: 18rem;
+  height: 18rem;
+  top: 45%;
+  left: 22%;
+  transform: rotate(50deg);
+}
+#c3 {
+  width: 8rem;
+  height: 8rem;
+  top: 75%;
+  right: 60%;
+}
+#c4 {
+  width: 10rem;
+  height: 10rem;
+  transform: rotate(60deg);
+  left: 56%;
+}
+
+
+
