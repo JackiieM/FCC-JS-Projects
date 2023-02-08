@@ -22,7 +22,7 @@ const Welcome = () => {
         <button className='selectProject' value='roman' onClick={(e) => handleValue(e)}>Roman Numeral Converter</button>
         <button className='selectProject' value='cipher' onClick={(e) => handleValue(e)}>Cipher</button>
       </section>
-      <section>
+      <section id='projectCont'>
         {project === 'palindrome' ? <Palindrome/> 
         : project === 'roman' ? <Roman/>
         : project === 'cipher' ? <Cipher/>

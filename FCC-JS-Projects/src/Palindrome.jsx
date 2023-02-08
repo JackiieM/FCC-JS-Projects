@@ -14,11 +14,12 @@ const Palindrome = () => {
     };
     return (
         <>
-            <p>Type in your word/phrase</p>
-            <input type='text' onChange={(e) => handleChange(e)}/>
-            <button onClick={() => isPalindrome(textInput)}>Check!</button>
-            <p>Is it a palindrome?</p>
-            {result ? <p>Yes! {textInput} is a ✨palindrome✨</p> : result === false ? <p>No, {textInput} is not a palindrome 😞</p> : ''}
+            <p className='instructions'>Type in your word/phrase</p>
+            <input type='text' onChange={(e) => handleChange(e)} className='componentInput'/>
+            <button onClick={() => isPalindrome(textInput)} className='componentBtn'>Check!</button>
+            <p className='instructions'>Is it a palindrome?</p>
+            {result ? <p className='instructions'>Yes! '{textInput}' is a ✨palindrome✨</p> 
+            : result === false ? <p className='instructions'>No, '{textInput}' is not a palindrome 😞</p> : ''}
         </>
     )
 };

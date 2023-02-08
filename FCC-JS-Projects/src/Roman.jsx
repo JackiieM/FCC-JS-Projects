@@ -16,10 +16,10 @@ const Roman = () => {
     }
     return (
         <>
-            <p>Type in a number</p>
-            <input type='text' onChange={(e) => handleChange(e)}/>
-            <button onClick={() => transformNumber(number)}>Convert!</button>
-            {result ? <p>The number {number} converted to Roman numerals is: {result}</p> : ''}
+            <p className='instructions'>Type in a number</p>
+            <input type='text' onChange={(e) => handleChange(e)} className='componentInput'/>
+            <button onClick={() => transformNumber(number)} className='componentBtn'>Convert!</button>
+            {result ? <p className='instructions'>The number {number} converted to Roman numerals is: {result}</p> : ''}
         </>
     )
 };

@@ -41,10 +41,11 @@ body {
   justify-self: center;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
   width: 85%;
+  height: calc(36rem + 4vw);
   margin: 5%;
   padding: 5%;
   background: rgba( 255, 255, 255, 0.25 );
@@ -113,5 +114,45 @@ body {
   left: 56%;
 }
 
+/* -------------------------- COMPONENTS --------------------------- */
+#projectCont {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.instructions {
+  font-family: var(--text);
+  color: var(--lightText);
+  font-size: calc(1rem + 1vw);
+  margin: 3%;
+}
+
+.componentInput {
+  width: 93%;
+  height: calc(3rem + 1vw);
+  margin: 5%;
+  border: 2px solid #623aa29a;
+  font-size: calc(0.8rem + 1vw);
+  padding: 3%;
+  border-radius: 0.8rem;
+}
+
+.componentBtn {
+  width: 100%;
+  height: calc(2.5rem + 1vw);
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.703);
+  background: #623aa21a;
+  font-family: var(--titleFont);
+  font-size: calc(1rem + 1vw);
+  color: var(--lightText);
+  transition: 0.5s;
+}
+
+.componentBtn:hover {
+  background: rgba( 255, 255, 255, 0.25 );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
 
