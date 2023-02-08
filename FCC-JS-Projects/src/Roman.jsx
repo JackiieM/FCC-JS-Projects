@@ -18,8 +18,8 @@ const Roman = () => {
         <>
             <p>Type in a number</p>
             <input type='text' onChange={(e) => handleChange(e)}/>
-            <button onClick={() => transformNumber(number)}>Transform!</button>
-            {result ? <p>The number {number} converted to Roman numberals is: {result}</p> : ''}
+            <button onClick={() => transformNumber(number)}>Convert!</button>
+            {result ? <p>The number {number} converted to Roman numerals is: {result}</p> : ''}
         </>
     )
 };
